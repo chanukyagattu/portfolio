@@ -9,7 +9,7 @@
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:chanukyasharma@gmail.com)
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=flat&logo=leetcode&logoColor=white)](https://leetcode.com/chanukyagattu)
 
-*Backend engineer with 10+ years building high-throughput financial systems at JPMC, Capital One, and AT&T — serving 100K+ clients with sub-200ms latency at ~200 TPS.*
+*Backend API engineer with 10+ years building RESTful microservices and event-driven systems at JPMC, Capital One, and AT&T — Java · Spring Boot · Kafka · AWS · serving 100K+ clients at sub-200ms latency.*
 
 </div>
 
@@ -17,9 +17,11 @@
 
 ## About Me
 
-I design and build **event-driven, cloud-native backend systems** that power mission-critical financial platforms at scale. My work lives at the intersection of distributed systems reliability and product delivery — from Kafka-based microservices processing millions of daily transactions to PySpark pipelines on AWS Glue enabling real-time portfolio analytics.
+I design and build **production-grade RESTful APIs and event-driven microservices** that power mission-critical financial platforms at scale. My core craft is Java + Spring Boot — designing clean, contract-first APIs with well-defined domain boundaries, reliable failure modes, and the observability to prove it in production.
 
-Currently at **JP Morgan Chase**, I own backend APIs for a digital wealth-management platform serving 100K+ clients and advisors. Before that, I led cloud migrations and platform modernization at AT&T and Capital One.
+My systems don't just handle load — they're built to stay consistent under it. From low-latency portfolio APIs serving real-time advisor workflows to Kafka-backed investment event pipelines sustaining ~200 TPS, I care deeply about how services behave at the seams: idempotency, backpressure, retry contracts, and schema evolution.
+
+Currently at **JP Morgan Chase**, I own the backend API layer for a digital wealth-management platform serving 100K+ clients and advisors. Before that, I led REST API modernization and microservices platform work at Capital One (Auto Loans) and AT&T.
 
 ```
 10+ Years Experience    |    Fortune 100 Financial Platforms    |    Millions of Transactions/Day
@@ -77,29 +79,32 @@ Currently at **JP Morgan Chase**, I own backend APIs for a digital wealth-manage
 ### JP Morgan Chase — Senior Software Engineer *(Aug 2022 – Present)*
 **Digital Wealth Management Platform · 100K+ Clients & Advisors**
 
-- Architected Java Spring Boot microservices with Apache Kafka for event-driven investment and goal-tracking workflows, sustaining **~200 TPS** with **sub-200ms** average latency
-- Built async PySpark data pipelines on AWS Glue for real-time and batch analytics — reduced data-sync latency by **25%**
-- Automated infrastructure provisioning with Terraform + ECS + Docker, cutting environment setup and release times by **40%**
+- Designed and owned the **RESTful API layer** for a wealth-management platform — contract-first API design with strict versioning, RBAC-enforced access control, and well-defined error contracts for advisor-facing and client-facing consumers
+- Architected **Java Spring Boot microservices** with clear domain boundaries (portfolio, goals, investments) — each service independently deployable, tested, and observable
+- Integrated Apache Kafka for **async event-driven workflows** (investment triggers, goal-state transitions) sustaining **~200 TPS** with **sub-200ms** p99 latency on synchronous paths
+- Built PySpark data pipelines on AWS Glue for batch analytics sync — reduced data-sync latency by **25%**
+- Automated infrastructure provisioning with Terraform + ECS + Docker, cutting release times by **40%**
 
 ---
 
 ### AT&T — Senior Software Engineer *(Aug 2021 – Aug 2022)*
-**Cloud Modernization · Legacy-to-AWS Migration**
+**Cloud Modernization · REST API Platform Rebuild**
 
-- Led full migration of legacy on-prem applications to AWS (ECS + Kubernetes), improving scalability and deployment reliability by **40%**
-- Re-architected monolithic platform into cloud-native microservices with Java Spring Boot — enabled independent scaling and faster release cycles
+- Re-architected a monolithic backend into **Spring Boot microservices with RESTful APIs** — clean service contracts, independent deployability, and faster release cycles
+- Led legacy on-prem migration to AWS (ECS + Kubernetes), improving scalability and deployment reliability by **40%**
 - Reduced release effort by **30%** via Terraform automation and Jenkins/GitHub Actions CI/CD pipelines
-- Cut incident detection time and improved MTTR by **35%** using Datadog, CloudWatch, and Grafana observability stack
+- Cut incident detection time and improved MTTR by **35%** using Datadog, CloudWatch, and Grafana
 
 ---
 
 ### Capital One — Senior Software Engineer *(Jan 2020 – Aug 2021)*
-**Auto Loans Backend Platform · High-Volume Financial Streaming**
+**Auto Loans Backend Platform · High-Volume Financial APIs**
 
-- Designed Java Spring Boot microservices for Capital One's Auto Loans backend — improved API response times across loan servicing systems
-- Built real-time Kafka streaming pipelines processing high-volume loan, payment, and underwriting events with strong ordering guarantees
-- Improved data throughput by **35%** via Java Concurrency APIs and multithreading optimizations
-- Enforced PCI compliance through field-level encryption, tokenization, and RBAC enforcement
+- Designed and built **Spring Boot RESTful microservices** for Capital One's Auto Loans platform — loan origination, servicing, and underwriting APIs consumed by internal systems and partner integrations
+- Applied **12-Factor app principles** across services: externalized config, stateless request handling, and health-check endpoints enabling zero-downtime deployments
+- Built real-time Kafka streaming pipelines processing high-volume loan, payment, and underwriting events with strong delivery and ordering guarantees
+- Improved data throughput by **35%** via Java Concurrency APIs and multithreading optimizations under peak load
+- Enforced PCI compliance through field-level encryption, tokenization, and RBAC — aligned with enterprise risk standards
 
 ---
 
