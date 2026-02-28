@@ -1,5 +1,3 @@
-<div align="center">
-
 # Chanukya Gattu
 
 ### Senior Software Engineer · Distributed Systems · Cloud-Native Architecture
@@ -9,9 +7,7 @@
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:chanukyasharma@gmail.com)
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=flat&logo=leetcode&logoColor=white)](https://leetcode.com/u/chanukya_gattu/)
 
-*Backend API engineer with 10+ years building RESTful microservices and event-driven systems at JPMC, Capital One, and AT&T — Java · Spring Boot · Kafka · AWS · serving 100K+ clients at sub-200ms latency.*
-
-</div>
+> Backend API engineer with 10+ years building RESTful microservices and event-driven systems at JPMC, Capital One, and AT&T — Java · Spring Boot · Kafka · AWS · serving 100K+ clients at sub-200ms latency.
 
 ---
 
@@ -141,17 +137,13 @@ Specialized in distributed computing, algorithms, networking, and database manag
 
 ```
 Fail fast, recover faster      —    Design for observable failures over silent ones
-Data contracts over code        —    Schema-first API and event design prevents integration debt  
+Data contracts over code        —    Schema-first API and event design prevents integration debt
 Infrastructure is code          —    No snowflake environments; Terraform everything
 Measure before optimizing       —    Instrument first, tune what the data confirms is slow
 ```
 
 ---
 
-<div align="center">
-
-*Open to Staff/Senior SWE roles in distributed systems, platform engineering, and backend infrastructure.*
+*Open to Senior SWE roles in distributed systems, platform engineering, and backend infrastructure.*
 
 [![Portfolio](https://img.shields.io/badge/View_Portfolio-000000?style=for-the-badge&logo=githubpages&logoColor=white)](https://chanukyagattu.github.io/portfolio/)
-
-</div>
