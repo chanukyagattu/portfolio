@@ -51,4 +51,4 @@ Backend Engineer architecting event-driven microservices and cloud-native system
 - GitHub: https://github.com/chanukyagattu
 - Email: chanukyasharma@gmail.com
 
-📄 [Download Resume](./Chanukya_Gattu_Resume.pdf)
+📄 [Download Resume](./CHANUKYA_GATTU_RESUME.pdf)
