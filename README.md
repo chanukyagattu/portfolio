@@ -1,12 +1,4 @@
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/chanukyagattu)
-[![Resume](https://img.shields.io/badge/Resume-4285F4?style=flat&logo=googledocs&logoColor=white)](https://chanukyagattu.github.io/portfolio/CHANUKYA_GATTU_RESUME.pdf)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/chanukyagattu)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:chanukyasharma@gmail.com)
-[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=flat&logo=leetcode&logoColor=white)](https://leetcode.com/u/chanukya_gattu/)
-
----
-
 ## About Me
 
 I design and build **production-grade RESTful APIs and event-driven microservices** that power mission-critical financial platforms at scale. My core craft is Java + Spring Boot — designing clean, contract-first APIs with well-defined domain boundaries, reliable failure modes, and the observability to prove it in production.
