@@ -1,4 +1,4 @@
-### Senior Software Engineer · Distributed Systems · Cloud-Native Architecture
+> Backend Engineer architecting event-driven microservices and cloud-native systems. Specialized in building high-throughput data pipelines using Java/Spring Boot, Apache Kafka, Flink and AWS to solve complex enterprise challenges.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/chanukyagattu)
 [![Resume](https://img.shields.io/badge/Resume-4285F4?style=flat&logo=googledocs&logoColor=white)](https://chanukyagattu.github.io/portfolio/CHANUKYA_GATTU_RESUME.pdf)
