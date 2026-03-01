@@ -1,5 +1,3 @@
-# Chanukya Gattu
-
 ### Senior Software Engineer · Distributed Systems · Cloud-Native Architecture
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/chanukyagattu)
@@ -7,8 +5,6 @@
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/chanukyagattu)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:chanukyasharma@gmail.com)
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=flat&logo=leetcode&logoColor=white)](https://leetcode.com/u/chanukya_gattu/)
-
-> Backend API engineer with 10+ years building RESTful microservices and event-driven systems at JPMC, Capital One, and AT&T — Java · Spring Boot · Kafka · AWS · serving 100K+ clients at sub-200ms latency.
 
 ---
 
