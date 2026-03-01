@@ -49,11 +49,18 @@ Currently at **JP Morgan Chase**, I own the backend API layer for a digital weal
 ![Cassandra](https://img.shields.io/badge/Cassandra-1287B1?style=flat&logo=apachecassandra&logoColor=white)
 ![Aurora](https://img.shields.io/badge/AWS_Aurora-232F3E?style=flat&logo=amazonaws&logoColor=white)
 
-**Observability & CI/CD**
+**Observability & Monitoring**
 
 ![Datadog](https://img.shields.io/badge/Datadog-632CA6?style=flat&logo=datadog&logoColor=white)
+![Dynatrace](https://img.shields.io/badge/Dynatrace-1496FF?style=flat&logo=dynatrace&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)
+![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat&logo=splunk&logoColor=white)
+
+**CI/CD**
+
 ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat&logo=jenkins&logoColor=white)
+![Spinnaker](https://img.shields.io/badge/Spinnaker-139BB4?style=flat&logo=spinnaker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
 
 ---
@@ -61,43 +68,30 @@ Currently at **JP Morgan Chase**, I own the backend API layer for a digital weal
 ## Career Highlights
 
 ### JP Morgan Chase — Senior Software Engineer *(Aug 2022 – Present)*
-**Digital Wealth Management Platform · 100K+ Clients & Advisors**
+**Digital Wealth Management Trading Platform · 100K+ Clients & Advisors**
 
-- Designed and owned the **RESTful API layer** for a wealth-management platform — contract-first API design with strict versioning, RBAC-enforced access control, and well-defined error contracts for advisor-facing and client-facing consumers
-- Architected **Java Spring Boot microservices** with clear domain boundaries (portfolio, goals, investments) — each service independently deployable, tested, and observable
-- Integrated Apache Kafka for **async event-driven workflows** (investment triggers, goal-state transitions) sustaining **~200 TPS** with **sub-200ms** p99 latency on synchronous paths
-- Built PySpark data pipelines on AWS Glue for batch analytics sync — reduced data-sync latency by **25%**
-- Automated infrastructure provisioning with Terraform + ECS + Docker, cutting release times by **40%**
+I own the backend API platform powering a digital wealth-management product used by over 100K clients and financial advisors daily. The core engineering challenge was building a REST API layer that could serve real-time portfolio reads at sub-200ms latency while staying consistent with an async Kafka event stream handling investment triggers and goal-state transitions simultaneously — without ever compromising on financial data correctness. The system is decomposed into Spring Boot microservices across portfolio, goals, and investment domains, each with strict versioning, RBAC-enforced access control, and independent deployability backed by Terraform-automated infrastructure on AWS ECS.
 
 ---
 
 ### AT&T — Senior Software Engineer *(Aug 2021 – Aug 2022)*
 **Cloud Modernization · REST API Platform Rebuild**
 
-- Re-architected a monolithic backend into **Spring Boot microservices with RESTful APIs** — clean service contracts, independent deployability, and faster release cycles
-- Led legacy on-prem migration to AWS (ECS + Kubernetes), improving scalability and deployment reliability by **40%**
-- Reduced release effort by **30%** via Terraform automation and Jenkins/GitHub Actions CI/CD pipelines
-- Cut incident detection time and improved MTTR by **35%** using Datadog, CloudWatch, and Grafana
+At AT&T I inherited a monolithic backend that had become a bottleneck — every release touched everything, and scaling one component meant scaling all of them. The challenge was decomposing it into independently deployable Spring Boot microservices with clean REST contracts, while simultaneously migrating the entire platform from on-prem to AWS without disrupting live operations. I led that migration across ECS and Kubernetes, introduced Terraform for infrastructure-as-code, and wired up a full observability stack with Datadog and Grafana — cutting incident detection time significantly and reducing release effort by nearly a third.
 
 ---
 
 ### Capital One — Senior Software Engineer *(Jan 2020 – Aug 2021)*
 **Auto Loans Backend Platform · High-Volume Financial APIs**
 
-- Designed and built **Spring Boot RESTful microservices** for Capital One's Auto Loans platform — loan origination, servicing, and underwriting APIs consumed by internal systems and partner integrations
-- Applied **12-Factor app principles** across services: externalized config, stateless request handling, and health-check endpoints enabling zero-downtime deployments
-- Built real-time Kafka streaming pipelines processing high-volume loan, payment, and underwriting events with strong delivery and ordering guarantees
-- Improved data throughput by **35%** via Java Concurrency APIs and multithreading optimizations under peak load
-- Enforced PCI compliance through field-level encryption, tokenization, and RBAC — aligned with enterprise risk standards
+At Capital One I worked on the Auto Loans backend — a high-stakes platform where loan origination, servicing, and underwriting APIs need to be not just fast, but provably correct under load and compliant with PCI standards. The hardest problem was building Kafka-backed event pipelines that could process high volumes of payment and underwriting events with strict ordering and delivery guarantees, while the synchronous REST APIs serving partner integrations stayed responsive under peak traffic. I solved the throughput bottleneck using Java Concurrency APIs and multithreading optimizations, and hardened the platform with field-level encryption, tokenization, and RBAC across all API surfaces.
 
 ---
 
 ### Verizon — Software Engineer *(May 2015 – Jan 2020)*
 **OPTIX Ordering Suite · FiOS Order Management**
 
-- Developed Spring Boot APIs and integration modules supporting high-volume call center operations for wireline products
-- Improved order processing latency by **~25%** via query tuning, caching, and async processing
-- Migrated legacy SOAP endpoints to RESTful APIs, reducing service coupling and improving long-term maintainability
+My foundation in large-scale backend engineering was built at Verizon, where I worked on the OPTIX Ordering Suite supporting FiOS order management and high-volume call center operations. The work centered on Spring Boot API development and integration — modernizing legacy SOAP endpoints into RESTful APIs, optimizing query performance, and introducing caching and async processing to bring order processing latency down meaningfully. It's where I developed the discipline of treating API contracts as first-class concerns and learned what it means to maintain backend systems that thousands of operators depend on every day.
 
 ---
 
