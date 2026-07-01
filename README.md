@@ -1,3 +1,10 @@
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/chanukyagattu)
+[![Resume](https://img.shields.io/badge/Resume-4285F4?style=flat&logo=googledocs&logoColor=white)](https://chanukyagattu.github.io/portfolio/CHANUKYA_GATTU_RESUME.pdf)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/chanukyagattu)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:chanukyasharma@gmail.com)
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=flat&logo=leetcode&logoColor=white)](https://leetcode.com/u/chanukya_gattu/)
+
+---
 
 ## About Me
 
@@ -71,33 +78,41 @@ Currently at **JP Morgan Chase**, I own the backend API layer for a digital weal
 ## Career Highlights
 
 ### JP Morgan Chase — Senior Software Engineer *(Aug 2022 – Present)*
-**Continuum Platform · Multi-Tenant Streaming Data Platform on AWS EKS**
 
-Architected and delivered Continuum — a multi-tenant streaming data platform processing millions of events daily across thousands of tenant pipelines on AWS EKS. Designed a Groovy-based declarative DSL enabling data engineering teams to define end-to-end pipelines as composable DAGs (`source | transform | sink`) without writing Flink boilerplate, collapsing pipeline onboarding from weeks to hours. Built the Flink execution engine underneath — each tenant pipeline runs as an isolated Flink job on a dedicated EKS pod using a shared Java/Flink base image, consuming from upstream Kafka topics with exactly-once processing semantics. Engineered checkpoint-triggered Parquet emission to an S3-backed data lake, coordinated by a control plane service maintaining file lineage, partition metadata, and multi-year retention policies. Enabled downstream analytics via AWS Glue Catalog for schema registration and partition management, making tenant data immediately queryable through Athena without manual intervention. Drove cross-cutting concerns including tenant isolation at the S3 prefix and IAM policy layer, Glue API throttle mitigation via batched partition registration, and EKS pod autoscaling tied to per-tenant Kafka consumer lag metrics.
-
----
-**Digital Wealth Management Trading Platform · 100K+ Clients & Advisors**
+#### 🏦 Digital Wealth Management Trading Platform
+**100K+ Clients & Advisors · Java · Spring Boot · Kafka · AWS ECS · Terraform**
 
 I own the backend API platform powering a digital wealth-management product used by over 100K clients and financial advisors daily. The core engineering challenge was building a REST API layer that could serve real-time portfolio reads at sub-200ms latency while staying consistent with an async Kafka event stream handling investment triggers and goal-state transitions simultaneously — without ever compromising on financial data correctness. The system is decomposed into Spring Boot microservices across portfolio, goals, and investment domains, each with strict versioning, RBAC-enforced access control, and independent deployability backed by Terraform-automated infrastructure on AWS ECS.
+
+#### ⚙️ Continuum Platform
+**Multi-Tenant Streaming Data Platform · Apache Flink · AWS EKS · Kafka · S3 · AWS Glue**
+
+Architected and delivered Continuum — a multi-tenant streaming data platform processing millions of events daily across thousands of tenant pipelines on AWS EKS. Designed a Groovy-based declarative DSL enabling data engineering teams to define end-to-end pipelines as composable DAGs without writing Flink boilerplate, collapsing pipeline onboarding from weeks to hours. Built the Flink execution engine underneath — each tenant pipeline runs as an isolated Flink job on a dedicated EKS pod with exactly-once processing semantics, checkpoint-triggered Parquet emission to S3, and downstream queryability via AWS Glue Catalog and Athena. Drove cross-cutting concerns including tenant isolation at the S3 prefix and IAM policy layer, Glue API throttle mitigation via batched partition registration, and EKS pod autoscaling tied to per-tenant Kafka consumer lag metrics.
 
 ---
 
 ### AT&T — Senior Software Engineer *(Aug 2021 – Aug 2022)*
-**Cloud Modernization · REST API Platform Rebuild**
+
+#### ☁️ Cloud Modernization · REST API Platform Rebuild
+**Java · Spring Boot · AWS ECS · Kubernetes · Terraform · Datadog**
 
 At AT&T I inherited a monolithic backend that had become a bottleneck — every release touched everything, and scaling one component meant scaling all of them. The challenge was decomposing it into independently deployable Spring Boot microservices with clean REST contracts, while simultaneously migrating the entire platform from on-prem to AWS without disrupting live operations. I led that migration across ECS and Kubernetes, introduced Terraform for infrastructure-as-code, and wired up a full observability stack with Datadog and Grafana — cutting incident detection time significantly and reducing release effort by nearly a third.
 
 ---
 
 ### Capital One — Senior Software Engineer *(Jan 2020 – Aug 2021)*
-**Auto Loans Backend Platform · High-Volume Financial APIs**
+
+#### 🚗 Auto Loans Backend Platform
+**High-Volume Financial APIs · Java · Spring Boot · Kafka · PCI Compliance**
 
 At Capital One I worked on the Auto Loans backend — a high-stakes platform where loan origination, servicing, and underwriting APIs need to be not just fast, but provably correct under load and compliant with PCI standards. The hardest problem was building Kafka-backed event pipelines that could process high volumes of payment and underwriting events with strict ordering and delivery guarantees, while the synchronous REST APIs serving partner integrations stayed responsive under peak traffic. I solved the throughput bottleneck using Java Concurrency APIs and multithreading optimizations, and hardened the platform with field-level encryption, tokenization, and RBAC across all API surfaces.
 
 ---
 
 ### Verizon — Software Engineer *(May 2015 – Jan 2020)*
-**OPTIX Ordering Suite · FiOS Order Management**
+
+#### 📡 OPTIX Ordering Suite · FiOS Order Management
+**Java · Spring Boot · REST APIs · SOAP Migration · Oracle**
 
 My foundation in large-scale backend engineering was built at Verizon, where I worked on the OPTIX Ordering Suite supporting FiOS order management and high-volume call center operations. The work centered on Spring Boot API development and integration — modernizing legacy SOAP endpoints into RESTful APIs, optimizing query performance, and introducing caching and async processing to bring order processing latency down meaningfully. It's where I developed the discipline of treating API contracts as first-class concerns and learned what it means to maintain backend systems that thousands of operators depend on every day.
 
