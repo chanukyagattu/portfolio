@@ -3,6 +3,40 @@
 
 @import "{{ site.theme }}";
 
+/* ── Dark mode variables ── */
+:root {
+  --bg: #ffffff;
+  --text: #24292e;
+  --text-muted: #586069;
+  --border: #e1e4e8;
+  --card-bg: #f6f8fa;
+  --heading: #1a1a2e;
+  --link: #0366d6;
+  --blockquote-bg: #f6f8fa;
+  --table-even: #f6f8fa;
+  --code-bg: #f6f8fa;
+}
+
+[data-theme="dark"] {
+  --bg: #0d1117;
+  --text: #c9d1d9;
+  --text-muted: #8b949e;
+  --border: #30363d;
+  --card-bg: #161b22;
+  --heading: #e6edf3;
+  --link: #58a6ff;
+  --blockquote-bg: #161b22;
+  --table-even: #161b22;
+  --code-bg: #161b22;
+}
+
+/* ── Base ── */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 /* ── Page body ── */
 .main-content {
   max-width: 860px;
@@ -10,15 +44,15 @@
   padding: 2rem 2.5rem;
   font-size: 1rem;
   line-height: 1.8;
-  color: #24292e;
+  color: var(--text);
 }
 
 /* ── Section headings ── */
 .main-content h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1a1a2e;
-  border-bottom: 2px solid #e1e4e8;
+  color: var(--heading);
+  border-bottom: 2px solid var(--border);
   padding-bottom: 0.4rem;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
@@ -28,15 +62,36 @@
 .main-content h3 {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #0366d6;
+  color: var(--link);
   margin-top: 1.8rem;
   margin-bottom: 0.2rem;
+}
+
+/* ── Project headings within a role ── */
+.main-content h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--heading);
+  background: var(--card-bg);
+  border-left: 4px solid var(--link);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0 4px 4px 0;
+  margin-top: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+/* ── Tech stack line under project heading ── */
+.main-content h4 + p strong {
+  font-size: 0.82rem;
+  color: var(--link);
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
 /* ── Role subtitle (bold paragraph under h3) ── */
 .main-content h3 + p strong {
   font-size: 0.9rem;
-  color: #586069;
+  color: var(--text-muted);
   font-weight: 600;
 }
 
@@ -45,24 +100,25 @@
   margin-top: 0.6rem;
   margin-bottom: 1rem;
   text-align: justify;
-  color: #444;
+  color: var(--text);
 }
 
 /* ── About Me paragraphs ── */
 .main-content h2 + p,
 .main-content h2 ~ p {
   text-align: justify;
+  color: var(--text);
 }
 
 /* ── Code block (stats bar) ── */
 .main-content pre {
-  background: #f6f8fa;
-  border: 1px solid #e1e4e8;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
   border-radius: 6px;
   padding: 1rem 1.5rem;
   font-size: 0.85rem;
   text-align: center;
-  color: #24292e;
+  color: var(--text);
 }
 
 /* ── Badges spacing ── */
@@ -74,7 +130,7 @@
 /* ── Horizontal rules ── */
 .main-content hr {
   border: none;
-  border-top: 1px solid #e1e4e8;
+  border-top: 1px solid var(--border);
   margin: 2rem 0;
 }
 
@@ -87,36 +143,60 @@
 }
 
 .main-content table th {
-  background: #f6f8fa;
+  background: var(--card-bg);
   padding: 0.6rem 1rem;
   text-align: left;
-  border: 1px solid #e1e4e8;
+  border: 1px solid var(--border);
   font-weight: 600;
+  color: var(--heading);
 }
 
 .main-content table td {
   padding: 0.6rem 1rem;
-  border: 1px solid #e1e4e8;
-  color: #444;
+  border: 1px solid var(--border);
+  color: var(--text);
 }
 
 .main-content table tr:nth-child(even) {
-  background: #f6f8fa;
+  background: var(--table-even);
 }
 
 /* ── Blockquote (tagline) ── */
 .main-content blockquote {
-  border-left: 4px solid #0366d6;
+  border-left: 4px solid var(--link);
   padding: 0.5rem 1rem;
   margin: 1rem 0;
-  color: #586069;
+  color: var(--text-muted);
   font-style: italic;
-  background: #f6f8fa;
+  background: var(--blockquote-bg);
   border-radius: 0 4px 4px 0;
 }
 
 /* ── Footer note ── */
 .main-content em {
-  color: #586069;
+  color: var(--text-muted);
   font-size: 0.9rem;
+}
+
+/* ── Dark mode toggle button ── */
+#theme-toggle {
+  position: fixed;
+  top: 16px;
+  right: 20px;
+  z-index: 999;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+#theme-toggle:hover {
+  background: var(--link);
+  color: #ffffff;
+  border-color: var(--link);
 }
