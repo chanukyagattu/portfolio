@@ -311,3 +311,31 @@ body {
   margin: 0;
   color: var(--text-muted);
 }
+
+/* ── Tooltip on hover ── */
+#contact-toggle {
+  position: relative;
+}
+
+#contact-toggle::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 50%;
+  right: 68px;
+  transform: translateY(50%);
+  background: var(--heading);
+  color: var(--bg);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, right 0.2s ease;
+}
+
+#contact-toggle:hover::after {
+  opacity: 1;
+  right: 64px;
+}
