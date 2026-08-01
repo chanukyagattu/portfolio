@@ -56,6 +56,30 @@
       </footer>
     </main>
 
+    <!-- Contact Widget -->
+    <div id="contact-widget">
+      <button id="contact-toggle" aria-label="Contact me">💬</button>
+    
+      <div id="contact-panel">
+        <div id="contact-header">
+          <span>Get in Touch</span>
+          <button id="contact-close" aria-label="Close">✕</button>
+        </div>
+    
+        <form id="contact-form" action="https://formspree.io/f/mwvgdogg" method="POST">
+          <div class="form-row">
+            <input type="text" name="firstName" placeholder="First Name" required>
+            <input type="text" name="lastName" placeholder="Last Name" required>
+          </div>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="phone" placeholder="Phone (optional)">
+          <textarea name="message" placeholder="Your message" rows="4" required></textarea>
+          <button type="submit">Send Message</button>
+          <p id="contact-status"></p>
+        </form>
+      </div>
+    </div>
+
     <script>
       const toggle = document.getElementById('theme-toggle');
       const saved = localStorage.getItem('theme') || 'light';
@@ -70,6 +94,44 @@
         document.documentElement.setAttribute('data-theme', next);
         localStorage.setItem('theme', next);
         toggle.textContent = next === 'dark' ? '☀️ Light' : '🌙 Dark';
+      });
+    </script>
+
+    <script>
+      const contactToggle = document.getElementById('contact-toggle');
+      const contactPanel = document.getElementById('contact-panel');
+      const contactClose = document.getElementById('contact-close');
+      const contactForm = document.getElementById('contact-form');
+      const contactStatus = document.getElementById('contact-status');
+    
+      contactToggle.addEventListener('click', () => {
+        contactPanel.classList.toggle('open');
+      });
+    
+      contactClose.addEventListener('click', () => {
+        contactPanel.classList.remove('open');
+      });
+    
+      contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        contactStatus.textContent = 'Sending...';
+        const formData = new FormData(contactForm);
+        try {
+          const response = await fetch(contactForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+          if (response.ok) {
+            contactStatus.textContent = '✅ Message sent!';
+            contactForm.reset();
+            setTimeout(() => { contactPanel.classList.remove('open'); contactStatus.textContent = ''; }, 2000);
+          } else {
+            contactStatus.textContent = '❌ Something went wrong. Try again.';
+          }
+        } catch (err) {
+          contactStatus.textContent = '❌ Network error. Try again.';
+        }
       });
     </script>
 
