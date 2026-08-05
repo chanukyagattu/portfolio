@@ -110,6 +110,26 @@ My foundation in large-scale backend engineering was built at Verizon, where I w
 
 ---
 
+## Projects
+
+Personal work, built outside of employment.
+
+### 🔀 StreamForge — YAML-defined streaming on Apache Flink
+**Apache Flink 1.18+ · Java 17 · Kafka · S3 / Iceberg / Snowflake · Docker**
+
+Write a `source | transform | sink` pipeline in YAML and StreamForge compiles it into a Flink job — resolving connectors, handling schema, guaranteeing exactly-once delivery, and registering the output in the catalog. The point is to remove Flink boilerplate from the path between a data engineer and a running pipeline, without hiding the runtime when something goes wrong. The design work sits in the DSL compiler, the connector SPI, the control plane, checkpoint-driven emission, Glue catalog sync, and the per-tenant isolation model — pluggable connectors mean a new sink is a module, not a fork.
+
+[📖 Documentation](https://chanukyagattu.github.io/stream-forge/) · [🏗 Architecture](https://chanukyagattu.github.io/stream-forge/docs/design/architecture) · [💻 GitHub](https://github.com/chanukyagattu/streamforge)
+
+### 🧭 My Odyssey — completion derived, never stored
+**Kotlin Multiplatform · Event Sourcing · Compose Multiplatform · iOS · JVM Test Harness**
+
+A GPS-verified travel completion tracker where only evidenced visits count. Every percentage is a pure fold over an append-only visit ledger against a versioned canon — there is no boolean anywhere in the system that says `Utah: complete`. Publish a canon release adding a third Utah place and the same untouched ledger reports Utah incomplete, with no migration, because there is no derived state to migrate. Evidence is tiered and upgrade-only, so trust can never silently regress. Teleports faster than Mach 1 and overlapping visits are rejected at ingest, so the ledger cannot contain a physically impossible history. Media is content-addressed and the store has no method that could send bytes to a network — the privacy position is structural, not a policy sentence.
+
+[📐 Idea and wireframes](my-odyssey/) · [💻 GitHub](https://github.com/chanukyagattu/my-odyssey)
+
+---
+
 ## Certifications
 
 | Certification | Issuer |
@@ -141,6 +161,18 @@ Measure before optimizing       —    Instrument first, tune what the data conf
 
 ---
 
+## Contact
+
 *Open to Senior SWE roles in distributed systems, platform engineering, and backend infrastructure.*
+
+| | |
+|---|---|
+| **Email** | [chanukyasharma@gmail.com](mailto:chanukyasharma@gmail.com) |
+| **LinkedIn** | [linkedin.com/in/chanukyagattu](https://linkedin.com/in/chanukyagattu) |
+| **GitHub** | [github.com/chanukyagattu](https://github.com/chanukyagattu) |
+| **LeetCode** | [leetcode.com/u/chanukya_gattu](https://leetcode.com/u/chanukya_gattu/) |
+| **Resume** | [CHANUKYA_GATTU_RESUME.pdf](CHANUKYA_GATTU_RESUME.pdf) |
+
+The 💬 button in the corner opens a message form that goes straight to my inbox.
 
 [![Portfolio](https://img.shields.io/badge/View_Portfolio-000000?style=for-the-badge&logo=githubpages&logoColor=white)](https://chanukyagattu.github.io/portfolio/)
