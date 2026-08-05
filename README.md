@@ -168,6 +168,8 @@ Measure before optimizing       —    Instrument first, tune what the data conf
 | | |
 |---|---|
 | **Email** | [chanukyasharma@gmail.com](mailto:chanukyasharma@gmail.com) |
+| **Phone** | [845-443-6258](tel:+18454436258) |
+| **Location** | Dallas, TX, United States |
 | **LinkedIn** | [linkedin.com/in/chanukyagattu](https://linkedin.com/in/chanukyagattu) |
 | **GitHub** | [github.com/chanukyagattu](https://github.com/chanukyagattu) |
 | **LeetCode** | [leetcode.com/u/chanukya_gattu](https://leetcode.com/u/chanukya_gattu/) |

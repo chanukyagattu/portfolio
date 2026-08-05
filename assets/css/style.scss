@@ -146,7 +146,27 @@ body {
   stroke-width: 1.7;
   stroke-linecap: round;
   stroke-linejoin: round;
-  opacity: 0.9;
+}
+
+/* ── One hue per section, so the eye finds a tab by colour ──
+   Icons keep their colour when the item is active; only the
+   label and the pill background respond to selection. */
+.side-nav-item[data-section="about"]          svg { stroke: #3b82f6; }
+.side-nav-item[data-section="stack"]          svg { stroke: #8b5cf6; }
+.side-nav-item[data-section="experience"]     svg { stroke: #f59e0b; }
+.side-nav-item[data-section="projects"]       svg { stroke: #10b981; }
+.side-nav-item[data-section="certifications"] svg { stroke: #e11d48; }
+.side-nav-item[data-section="education"]      svg { stroke: #0891b2; }
+.side-nav-item[data-section="contact"]        svg { stroke: #ea580c; }
+
+[data-theme="dark"] {
+  .side-nav-item[data-section="about"]          svg { stroke: #60a5fa; }
+  .side-nav-item[data-section="stack"]          svg { stroke: #a78bfa; }
+  .side-nav-item[data-section="experience"]     svg { stroke: #fbbf24; }
+  .side-nav-item[data-section="projects"]       svg { stroke: #34d399; }
+  .side-nav-item[data-section="certifications"] svg { stroke: #fb7185; }
+  .side-nav-item[data-section="education"]      svg { stroke: #22d3ee; }
+  .side-nav-item[data-section="contact"]        svg { stroke: #fb923c; }
 }
 
 /* ── Sub-items under Projects ── */
