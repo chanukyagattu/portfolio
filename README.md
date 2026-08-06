@@ -128,6 +128,16 @@ A GPS-verified travel completion tracker where only evidenced visits count. Ever
 
 [📐 Idea and wireframes](my-odyssey/) · [💻 GitHub](https://github.com/chanukyagattu/my-odyssey)
 
+### 📊 TickrLab — signals computed, never asserted
+
+**React 19 · TypeScript · GitHub Actions as backend · lightweight-charts · Web Workers · Cloudflare Workers AI**
+
+A market dashboard with no server anywhere in it, and no number in the UI that can't be recomputed by hand from what's on screen. Equities, bond and commodity ETFs, and crypto all carry a momentum score, but the score is never rendered as a verdict — it decomposes into its four inputs, prints the RSI, EMA spread, MACD slope and volume ratio that produced it, and sits next to the measured hit rate of that exact configuration across 400+ historical signals. That number is 51% after costs, worse than buy-and-hold, and it ships in the UI rather than the footnotes; a signal you can't falsify isn't an engineering artifact. The interesting constraint is that static hosting has no backend to hide an API key in or absorb a rate limit, so the pipeline inverts: scheduled Actions jobs fetch under repo secrets and force-push a single-commit orphan `data` branch, and every visitor reads a static file — ten thousand concurrent users cost the same upstream call budget as zero. The copilot follows the same rule in the other direction: scores are computed client-side and passed in as context, so the model narrates numbers it did not produce and structurally cannot hallucinate a price, with a local intent classifier refusing advice queries before any inference is billed. Design work sits in the composite scoring engine, the Worker-hosted backtester that validates it, the CI data pipeline and its keepalive against cron auto-disable, and the disclaimer path — appended by the UI, never by the prompt, so no jailbreak removes it.
+
+[📐 Idea and wireframes](https://chanukyagattu.github.io/tickrlab/wireframes/) · [🚀 Live demo](https://chanukyagattu.github.io/tickrlab/) · [📖 Design doc](https://github.com/chanukyagattu/tickrlab/blob/main/DESIGN.md) · [💻 GitHub](https://github.com/chanukyagattu/tickrlab)
+
+> **Not financial advice.** TickrLab is a technical demonstration. Indicator scores are mechanical calculations with no demonstrated predictive value.
+
 ---
 
 ## Certifications
