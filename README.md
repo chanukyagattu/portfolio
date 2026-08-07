@@ -143,10 +143,11 @@ A GPS-verified travel completion tracker where only evidenced visits count. Ever
 
 ## Education
 
-**M.S. Electrical Engineering** — State University of New York, New Paltz *(2013–2015)*
+**Master of Science in Electrical Engineering** — State University of New York, New Paltz *(2013–2015)*
 Specialized in distributed computing, algorithms, networking, and database management
 
-**B.Tech Electrical Engineering** — Kakatiya University, India *(2009–2013)*
+**Bachelor of Technology in Electrical Engineering** — Kakatiya University, Warangal, India *(2009–2013)*
+Foundation in electrical systems, programming, and applied mathematics, with an emphasis on analytical problem solving and system modelling
 
 ---
 
