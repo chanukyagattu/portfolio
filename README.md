@@ -119,7 +119,7 @@ Personal work, built outside of employment.
 
 Write a `source | transform | sink` pipeline in YAML and StreamForge compiles it into a Flink job — resolving connectors, handling schema, guaranteeing exactly-once delivery, and registering the output in the catalog. The point is to remove Flink boilerplate from the path between a data engineer and a running pipeline, without hiding the runtime when something goes wrong. The design work sits in the DSL compiler, the connector SPI, the control plane, checkpoint-driven emission, Glue catalog sync, and the per-tenant isolation model — pluggable connectors mean a new sink is a module, not a fork.
 
-[📖 Documentation](https://chanukyagattu.github.io/stream-forge/) · [🏗 Architecture](https://chanukyagattu.github.io/stream-forge/docs/design/architecture) · [💻 GitHub](https://github.com/chanukyagattu/streamforge)
+[📖 Documentation](https://chanukyagattu.github.io/stream-forge/) · [🏗 Architecture](https://chanukyagattu.github.io/stream-forge/docs/design/architecture) · [💻 GitHub](https://github.com/chanukyagattu/stream-forge)
 
 ### 🧭 My Odyssey — completion derived, never stored
 **Kotlin Multiplatform · Event Sourcing · Compose Multiplatform · iOS · JVM Test Harness**
