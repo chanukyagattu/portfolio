@@ -121,19 +121,6 @@ Write a `source | transform | sink` pipeline in YAML and StreamForge compiles it
 
 [📖 Documentation](https://chanukyagattu.github.io/stream-forge/) · [🏗 Architecture](https://chanukyagattu.github.io/stream-forge/docs/design/architecture) · [💻 GitHub](https://github.com/chanukyagattu/streamforge)
 
-### 📈 TickrLab — signals computed, never asserted
-**React 19 · TypeScript · Vite · Web Workers · GitHub Actions · Cloudflare Workers AI**
-
-A market dashboard with no server anywhere in it, and no number in the UI that can't be recomputed by hand from what's on screen. Momentum scores are never rendered as a verdict — each one decomposes into the four inputs that produced it, prints their raw values, and sits next to the measured historical hit rate of that exact configuration. That hit rate is ~51% after costs, worse than buy-and-hold, and it ships in the UI rather than the footnotes: a signal you can't falsify isn't an engineering artifact.
-
-Two ideas carry the build. **GitHub Actions is the backend** — static hosting has nowhere to hide an API key and most financial feeds send no CORS headers, so scheduled CI jobs fetch under repo secrets and force-push a single-commit orphan `data` branch; ten thousand concurrent visitors cost the same upstream call budget as zero. **The model narrates, it never computes** — scores are calculated client-side and passed to the copilot as context, so it structurally cannot hallucinate a price or an RSI, and a local intent classifier refuses advice queries before any inference is billed.
-
-The tests earned their keep twice. A naive `loss === 0 ? 100` guard made RSI read a flat series as maximally overbought; comparing against another library would have agreed, so it took a hand-computed fixture to catch. And the default signal threshold selected nothing — across 5,100 scored bars `|score|` exceeds 50 approximately 0.0% of the time, because RSI reads mean-reversion while EMA spread reads trend and the two partly cancel. The backtest ran zero trades and reported that as a finding.
-
-*Technical demonstration, not financial advice.*
-
-[📊 Live dashboard](https://chanukyagattu.github.io/tickrlab/) · [📐 Wireframes](https://chanukyagattu.github.io/tickrlab/wireframes/) · [💻 GitHub](https://github.com/chanukyagattu/tickrlab)
-
 ### 🧭 My Odyssey — completion derived, never stored
 **Kotlin Multiplatform · Event Sourcing · Compose Multiplatform · iOS · JVM Test Harness**
 
