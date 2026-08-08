@@ -119,7 +119,16 @@ Personal work, built outside of employment.
 
 Write a `source | transform | sink` pipeline in YAML and StreamForge compiles it into a Flink job — resolving connectors, handling schema, guaranteeing exactly-once delivery, and registering the output in the catalog. The point is to remove Flink boilerplate from the path between a data engineer and a running pipeline, without hiding the runtime when something goes wrong. The design work sits in the DSL compiler, the connector SPI, the control plane, checkpoint-driven emission, Glue catalog sync, and the per-tenant isolation model — pluggable connectors mean a new sink is a module, not a fork.
 
-[📖 Documentation](https://chanukyagattu.github.io/stream-forge/) · [🏗 Architecture](https://chanukyagattu.github.io/stream-forge/docs/design/architecture) · [💻 GitHub](https://github.com/chanukyagattu/stream-forge)
+[📖 Documentation](https://chanukyagattu.github.io/stream-forge/) · [🏗 Architecture](https://chanukyagattu.github.io/stream-forge/docs/design/architecture) · [💻 GitHub](https://github.com/chanukyagattu/streamforge)
+
+### 🌊 Flink for Dummies — the runtime, not the API surface
+**Apache Flink 2.3 · Docusaurus · TypeScript · MDX · Interactive labs**
+
+Four browser labs that run real Flink logic rather than animations. The KeyBy lab is a faithful port of `MathUtils.murmurHash` and `KeyGroupRangeAssignment`, so the subtask assignments it prints are the ones your job would actually produce — change parallelism and watch precisely which state migrates. The Watermark lab advances one record at a time under Flink's real `maxTs − bound − 1ms` rule, firing windows and dropping late records exactly as the runtime would. The Checkpoint lab walks a barrier through a topology, aligned and unaligned, then crashes the job and restores it. The Backpressure lab computes `busy` / `backPressured` / `idle` the way the Flink UI derives them, so finding the bottleneck is practice, not theory.
+
+Around the labs sit 60 pages structured as a textbook rather than a reference: Levels 0 through 11, from *what is an event?* to one event's complete journey through the runtime. Every page answers the same five questions — what problem this solves, the mental model, what Flink does internally, how it fails, and what changes at scale. The content is built to mount as a second docs instance inside another Docusaurus site, which is how StreamForge embeds it.
+
+[📖 Read the guide](https://chanukyagattu.github.io/flink4dummies/) · [🔬 Watermarks](https://chanukyagattu.github.io/flink4dummies/docs/flink/watermarks/what-is-a-watermark) · [🛠 Production runbook](https://chanukyagattu.github.io/flink4dummies/docs/flink/production/runbook) · [💻 GitHub](https://github.com/chanukyagattu/flink4dummies)
 
 ### 🧭 My Odyssey — completion derived, never stored
 **Kotlin Multiplatform · Event Sourcing · Compose Multiplatform · iOS · JVM Test Harness**
