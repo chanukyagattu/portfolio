@@ -128,6 +128,13 @@ A GPS-verified travel completion tracker where only evidenced visits count. Ever
 
 [📐 Idea and wireframes](my-odyssey/) · [💻 GitHub](https://github.com/chanukyagattu/my-odyssey)
 
+### 🤖 AI Atlas — an illustrated encyclopedia of AI
+**Docusaurus 3 · TypeScript · Mermaid · KaTeX · Cloudflare Workers AI · GitHub Actions**
+
+Ninety-one pages taking a reader from "what is AI?" to KV-cache economics — each one a diagram, a worked example with real numbers, and runnable code under thirty lines. The entire tree is generated from a single manifest: sidebar, glossary, difficulty badges, prerequisite links and the chatbot's search index are all derived, so adding a page is a one-line edit and nothing can drift out of sync. Every number on the site was produced by executing the code block printed beside it, and a dozen pages were rewritten mid-draft when the real output contradicted the claim — including three demos that proved the opposite of their own point. The design work sits in the generation pipeline, in the Cloudflare Worker behind the assistant — where a deterministic intent gate resolves refusals and navigation *before* any inference, cutting token cost and closing the prompt-injection path in the same component — and in the Systems track, which maps serving, batching, caching and cost engineering onto a backend engineer's existing mental model.
+
+[📖 Read the Atlas](https://chanukyagattu.github.io/ai4dummies/) · [🏗 Systems track](https://chanukyagattu.github.io/ai4dummies/docs/systems/the-ai-stack) · [💻 GitHub](https://github.com/chanukyagattu/ai4dummies)
+
 ---
 
 ## Certifications
