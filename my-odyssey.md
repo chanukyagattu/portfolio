@@ -38,7 +38,7 @@ Colour carries scope, not decoration. A pink arc is progress in every one of the
 Three dials, one frame, no scrolling. The numbers are the product, so reaching the
 third one should not require a gesture.
 
-<img src="img/home.png" alt="Home screen with world, country and state dials" width="270">
+<img src="docs/img/home.png" alt="Home screen with world, country and state dials" width="270">
 
 The country and state tiles are titled with their names — *United States*, *Utah* —
 rather than the words "Country" and "State", so the screen tells you what you are
@@ -51,8 +51,8 @@ looking at without a legend.
 Tapping a dial drills down one level. The tile header keeps the dial visible while
 the list below carries the detail.
 
-<img src="img/tracker-country.png" alt="Country tracker listing states" width="270">
-<img src="img/tracker-state.png" alt="State tracker listing places" width="270">
+<img src="docs/img/tracker-country.png" alt="Country tracker listing states" width="270">
+<img src="docs/img/tracker-state.png" alt="State tracker listing places" width="270">
 
 Places outside the canon are in no denominator, so visiting more things cannot
 dilute a percentage — and cannot pad one either.
@@ -64,7 +64,7 @@ dilute a percentage — and cannot pad one either.
 The camera sits in the middle of the nav, raised. It is the one control you press
 while standing somewhere, so it does not wait behind two taps of navigation.
 
-<img src="img/capture.png" alt="Capture screen showing an outside-geofence position" width="270">
+<img src="docs/img/capture.png" alt="Capture screen showing an outside-geofence position" width="270">
 
 The screen states the evidence before you commit: the fix, its accuracy, distance
 to the place's centroid, the geofence radius. Outside it, the tile turns red and the
@@ -79,8 +79,8 @@ uncredited day is never lost with its score.
 Scope is inherited from wherever you arrived, so opening Timeline from Utah's
 tracker lands on Utah rather than resetting to the world.
 
-<img src="img/timeline-memories.png" alt="Timeline memories grid" width="270">
-<img src="img/timeline-explore.png" alt="Timeline explore list" width="270">
+<img src="docs/img/timeline-memories.png" alt="Timeline memories grid" width="270">
+<img src="docs/img/timeline-explore.png" alt="Timeline explore list" width="270">
 
 **Memories** shows verified visits only — mixing counted and uncounted made the
 grid unreadable as progress. **Explore** is the inverse: what is left, nearest
@@ -90,7 +90,7 @@ first, with a badge on anything that would complete a state.
 
 ## Pickers
 
-<img src="img/picker.png" alt="State picker" width="270">
+<img src="docs/img/picker.png" alt="State picker" width="270">
 
 Every state shows its own progress, so choosing where to look is also a summary.
 Countries outside the canon are listed but disabled, with the reason stated rather
@@ -103,8 +103,8 @@ than hidden.
 The card is the entire privacy surface — aggregate by construction, with no place
 names, dates or coordinates.
 
-<img src="img/share-state.png" alt="Single-scope share card" width="270">
-<img src="img/share-combined.png" alt="Combined share card with three rings" width="270">
+<img src="docs/img/share-state.png" alt="Single-scope share card" width="270">
+<img src="docs/img/share-combined.png" alt="Combined share card with three rings" width="270">
 
 The combined card nests all three scopes as concentric rings on a dark ground,
 each in its scope's colour so the legend confirms the chart instead of decoding it.
@@ -113,7 +113,7 @@ each in its scope's colour so the legend confirms the chart instead of decoding 
 
 ## Settings
 
-<img src="img/settings.png" alt="Settings drawer with profile and appearance" width="270">
+<img src="docs/img/settings.png" alt="Settings drawer with profile and appearance" width="270">
 
 Light and dark are real themes rather than a filter: surfaces flip, and the status
 colours re-tint for the ground they sit on. The scope hues stay fixed in both, so
