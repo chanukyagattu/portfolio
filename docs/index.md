@@ -1,8 +1,5 @@
 ---
-layout: default
 title: My Odyssey
-permalink: /my-odyssey/
-nav: my-odyssey
 ---
 
 # My Odyssey
